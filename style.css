@@ -1,0 +1,311 @@
+body {
+  font-family: Arial, Helvetica, Sans-Serif;
+  font-size: 20px;
+  background: #343434;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main img {
+  width: 225px;
+  height: 275px;
+  border-radius: 5px;
+}
+
+.columnContainer:hover>section:hover>img:first-chil
+
+main img:hover>:first-child{
+  src: url("product-1-1.png");
+}
+
+main div {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 10px;
+  margin: 15px;
+}
+
+main div:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+main div h2,
+h4 {
+  margin: 0;
+}
+
+/* Add Cart button */
+#addToCart {
+  align-items: center;
+  appearance: button;
+  background-color: #1f9978;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue", sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin-top: 10px;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#addToCart:active {
+  background-color: #166f57;
+}
+
+#addToCart:hover {
+  background-color: #19795f;
+}
+
+#flexContainer {
+  /* Specifies that the contents will be laid out according to Flexbox rules. */
+  display: flex;
+}
+
+header {
+  min-height: 100px;
+  margin: 3px;
+  padding: 3px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 120px;
+  font-family: "Gambetta", serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin: 0;
+  color: PaleGoldenRod;
+  outline: none;
+  text-align: center;
+}
+
+.title h1:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 1px;
+}
+
+header img {
+  width: 75px;
+}
+
+nav {
+  /* Shorthand property specifying flex-grow, flex-shrink, and flex-basis. */
+  flex: 1 1 15%;
+  min-width: 150px;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 242px;
+}
+
+li p {
+  display: block;
+  color: #58d5c9;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* Change the link color on hover */
+li p:hover {
+  background-color: #404040;
+  color: #58d5c9;
+}
+
+.active {
+  background-color: #404040;
+  color: #58d5c9;
+}
+
+aside {
+  background: radial-gradient(#60efbc, #58d5c9);
+  /* Shorthand property specifying flex-grow, flex-shrink, and flex-basis. */
+  flex: 1 1 25%;
+  min-width: 150px;
+  padding: 10px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 800px;
+  background: #ffffff;
+  border: 1px solid black;
+  /* Shorthand property specifying flex-grow, flex-shrink, and flex-basis. */
+  flex: 2 1 60%;
+  justify-content: center;
+  padding: 3px;
+}
+
+
+/*Footer with waves*/
+.footer {
+  position: relative;
+  background: #05b3a4;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.menu__item {
+  list-style: none;
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+.menu__link:hover {
+  color: white;
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(./images/wave.png);
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+/* When the page is resized, use the styles below */
+
+@media all and (max-width: 640px) {
+  #flexContainer {
+    /* Shorthand property specifying flex-direction and flex-wrap */
+    flex-flow: column wrap;
+  }
+
+  header {
+    min-height: 75px;
+  }
+
+  nav {
+    min-height: 50px;
+    /* Specifying the order so the nav appears as the first item in the flex container */
+    order: 1;
+  }
+
+  aside {
+    min-height: 50px;
+    /* Specifying the order so the nav appears as the second item in the flex container */
+    order: 2;
+  }
+
+  #content {
+    /* Specifying the order so the nav appears as the third item in the flex container */
+    min-height: 725px;
+    order: 3;
+  }
+
+  footer {
+    min-height: 25px;
+  }
+}
